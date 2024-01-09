@@ -1,6 +1,6 @@
 ### The difference between null and undefined
 
-First of all, Undefined and Null are both basic data types. Each of these two basic data types has only one value, which is undefined and null.
+First of all, Undefined and Null are both basic data types. Each of these two basic data types has only one value, which is `undefined` and `null`.
 
 Undefined means undefined, while null means empty object. When a general variable is declared but not yet defined, it will return undefined. null is mainly used to assign values to variables that may return objects as initialization.
 
