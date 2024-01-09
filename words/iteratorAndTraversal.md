@@ -1,0 +1,10 @@
+iterator
+traversal
+algorithms
+encapsulate
+typically
+retrieve
+generalized
+binary
+facilitate
+systematically
