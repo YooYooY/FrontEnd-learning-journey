@@ -7,6 +7,7 @@
 Anything that is not inside the function is a global execution context. It first creates a global window object and sets the value of this equal to this global object. There is only one global execution context in a program.
 
 ##### function execution context
+When a function is called, a new execution context is created for the function. There can be any number of function contexts.
 
 ##### **eval** function execution context  
 
