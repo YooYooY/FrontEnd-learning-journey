@@ -42,11 +42,11 @@ there are two phases to create an execution context: **creation phase** and **ex
 - In the context of global execution, this points to the global object(window object)
 - In a function execution context, the value of `this` points to depends on how the function is called. If it is called by a reference object, then `this` will be set to that object, otherwise the value of `this` will be set to the global object or undefined
 
-##### create lexical environment components
+###### create lexical environment components
 - The lexical environment is a data structure with an identifier-variable mapping. The identifier refers to the variable or function name, and the variable is a reference to the actual object or original data.
 - Environment recorder: used to store the actual location of the variable and function declaration. Reference to the external environment: can access the parent scope.
 
-##### Create a variable environment component
+###### Create a variable environment component
 A variable environment is also a lexical environment, and its environment recorder holds the bindings created by the variable declaration statements in the execution context.
 
 
