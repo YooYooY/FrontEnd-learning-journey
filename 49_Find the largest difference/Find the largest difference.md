@@ -9,28 +9,6 @@ We can solve this problem efficiently in O(n) time complexity, where n is the nu
 
 We can write a JavaScript function to solve this problem.
 
-```js
-function largestDiff(arr) {
-  if (arr.length < 2) {
-    return 0; // If the array is empty or has less than 2 elements, return 0.
-  }
-
-  let min = arr[0];
-  let maxDiff = 0;
-
-  for (let i = 1; i < arr.length; i++) {
-    maxDiff = Math.max(maxDiff, arr[i] - min); // Update maxDiff with the difference between current element and min value
-    min = Math.min(min, arr[i]); // Update min if the current element is smaller
-  }
-
-  return maxDiff;
-}
-
-console.log(largestDiff([-1, 2, 3, 10, 9])); // Output: 11
-console.log(largestDiff([])); // Output: 0
-console.log(largestDiff([1])); // Output: 0
-```
-
 In this solution, we initialize the min variable with the first element in the array and initialize maxDiff to 0. Then, we iterate through the array and update maxDiff and min at each step. Finally, we return the maxDiff.
 
 
