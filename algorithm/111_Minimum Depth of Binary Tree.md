@@ -22,23 +22,28 @@ var minDepth = function (root) {
   //  let queue = [root];
   //  let depth = 1;
 
-  //  while(queue.length) {
-  //     let node = queue.shift();
-  //     if(!node.left && !node.right) {
-  //         return depth
-  //     }else{
-  //         node.left && queue.push(node.left)
-  //         node.right && queue.push(node.right)
-  //     }
-  //     depth++
-  //  }
-  
+  while (queue.length) {
+    const size = queue.length
+    while (size) {
+      let node = queue.shift()
+      if (!node.left && !node.right) {
+        return depth
+      } else {
+        node.left && queue.push(node.left)
+        node.right && queue.push(node.right)
+      }
+      size--;
+    }
+
+    depth++
+  }
+
   /*** dfs solution1 ***/
   // if(!root) return 0;
   // if(!root.left) return 1+minDepth(root.right)
   // if(!root.right) return 1+minDepth(root.left)
   // return 1+Math.min(minDepth(root.left), minDepth(root.right))
-  
+
   /*** dfs solution2 ***/
   if (root === null) return 0
   const leftDepth = minDepth(root.left)
