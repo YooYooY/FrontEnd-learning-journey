@@ -78,7 +78,7 @@ function render(vnode, container) {
 }
 ```
 
-设置属性需要考虑一些特殊情况，我们单独将其拿出来作为一个方法 setAttribute
+Setting attributes requires some special circumstances to be considered. We take them out separately as a method setAttribute.
 
 ```js
 function setAttribute(dom, name, value) {
