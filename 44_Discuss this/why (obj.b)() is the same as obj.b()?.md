@@ -17,8 +17,6 @@ console.log(obj.method());  // Outputs: 'Hello'
 
 In the above code, obj.method() outputs 'Hello' because the this inside the method refers to obj, and this.prop is equal to 'Hello'.
 
-In the above code, obj.method() outputs 'Hello' because the this inside the method refers to obj, and this.prop is equal to 'Hello'.
-
 ```js
 let myFunc = obj.method;
 console.log(myFunc());  // Outputs: undefined

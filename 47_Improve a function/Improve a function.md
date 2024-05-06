@@ -39,7 +39,6 @@ this function takes in an array of objects `items`, and an array of key-value pa
 
 No, this function is not working as expected. The filter condition in the forEach loop is incorrect, as it's comparing the value of `pair.k` to the value of `pair.v` instead of comparing the value of `item[pair.k]` to `pair.v`. Additionally, the function is using `===` instead of `!==` which means it's excluding items that match the exclude criteria instead of excluding items that don't match.
 
-
 #### What is the time complexity of this function?
 
 The time complexity of this function is `O(n*m)`, where n is the length of `items` and m is the length of `excludes`. For each exclude criteria, the function filters through all items to check if they have the excluded key-value pair.
@@ -54,7 +53,7 @@ function excludeItems(items, excludes) {
       acc.push(item);
     }
     return acc;
-  }, []);
+  }, []); 
 }
 ```
 This function uses a single iteration through the `items` array, and checks each item against all exclude criteria using `Array.some`. It then pushes the item into the accumulator array `acc` only if none of the exclude criteria match. The time complexity of this new function is O(n*m), which is the best we can do given that we need to check each item against each exclude criteria.
