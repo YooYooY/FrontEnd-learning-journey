@@ -1,6 +1,7 @@
 ### 20. Valid Parentheses
 
 https://leetcode.com/problems/valid-parentheses/description/
+
 This article describes how to solve LeetCode question 20 "valid brackets" problem.
 
 We can use the stack data structure to determine whether a string contains a valid bracket combination.
